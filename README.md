@@ -1,4 +1,4 @@
-# 🩺 EchoCare AI — Next Generation Healthcare Platform
+#  EchoCare AI — Next Generation Healthcare Platform
 
 > *Where intelligent healthcare meets futuristic technology.*
 
