@@ -1,0 +1,132 @@
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: 
+  radial-gradient(circle at 15% 20%, rgba(56, 189, 248, 0.35), transparent 45%),
+  radial-gradient(circle at 85% 30%, rgba(99, 102, 241, 0.28), transparent 45%),
+  radial-gradient(circle at 50% 90%, rgba(14, 165, 233, 0.18), transparent 50%),
+  #020617;
+
+  color: white;
+}
+
+
+.login-hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.login-container {
+  width: 100%;
+  max-width: 430px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(20px);
+  padding: 40px 30px;
+  border-radius: 18px;
+  text-align: center;
+
+  box-shadow:
+    0 0 40px rgba(59, 130, 246, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+
+.login-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #00f0ff;
+  text-shadow: 
+    0 0 5px #00f0ff;
+}
+
+.subtitle {
+  color: #cbd5f5;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background: #0f172a;
+  color: white;
+  height: 44px;
+  font-size: 16px;
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #3b82f6, #22c55e);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #458af8, #27c662);
+}
+
+/* GOOGLE */
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15.7px;
+  margin-bottom: 18px;
+}
+.google-btn:hover{
+  background: white;
+}
+.google-btn img {
+  width: 22px;
+}
+.register-text {
+  margin-top: 18px;
+  text-align: center;
+  color: #b8c4d6;
+  font-size: 0.99rem;
+  letter-spacing: 0.3px;
+}
+
+.register-text span {
+  color: #4fd1c5;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.01rem;
+  transition: 0.3s ease;
+  margin-left: 4px;
+}
+
+.register-text span:hover {
+  color: #7ef9ee;
+  text-shadow: 0 0 10px rgba(79, 209, 197, 0.7);
+}

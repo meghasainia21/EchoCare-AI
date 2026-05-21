@@ -1,0 +1,195 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.landing {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url("../assets/mainimage.webp") no-repeat center center/cover;
+
+  filter: blur(9px);   
+  transform: scale(1.1); 
+
+  z-index: -1;
+}
+
+
+.landing::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 6, 23, 0.6);
+  z-index: -1;
+}
+
+/* HERO SECTION */
+.hero-care{
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* HERO CONTENT */
+.hero-care h1 {
+   color: #ffffff;
+  font-size: 3.9rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* TYPED TEXT */
+#element {
+color: #60a5fa;
+  margin-left: 10px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  color: #e2e8f0; 
+  margin-top: 20px;
+  font-size: 1.45rem;
+  font-family: 'Inter', sans-serif;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  line-height: 1.6;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+/* BUTTON */
+.cta-btn {
+  margin-top: 40px;
+  padding: 14px 36px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #015ff5, #02c5e7);
+  color: white;
+ font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  /* 🔥 depth */
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+}
+
+/* HOVER */
+.cta-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+ background: linear-gradient(135deg, #1168f3, #02a2be);
+  box-shadow: 
+    0 12px 35px rgba(59, 130, 246, 0.5),
+    0 0 15px rgba(6, 182, 212, 0.6);
+}
+
+/* CLICK EFFECT */
+.cta-btn:active {
+  transform: scale(0.97);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+.layout {
+  display: flex;
+}
+
+/* SIDEBAR FIXED */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 269px;
+  height: 100vh;
+  padding: 25px;
+  color: white;
+  
+  font-size: 19.5px;
+  background: rgba(44, 109, 250, 0.85);
+  backdrop-filter: blur(14px);
+}
+.sidebar h2{
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(56,189,248,0.8),
+               0 0 20px rgba(56,189,248,0.5);
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.main {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding: 30px;
+}
+
+/* LINKS */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+
+.sidebar a.active {
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+}
+.logout{
+  color: white;
+  font-weight: bold;
+ font-size: 17.5px;
+}
