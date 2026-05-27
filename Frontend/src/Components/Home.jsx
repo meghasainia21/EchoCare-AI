@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/Home.css";
 import { useNavigate } from "react-router-dom";
+import developer from "../assets/developer.avif";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -167,7 +168,7 @@ const [email, setEmail] = useState("");
 
     {/* LEFT IMAGE */}
     <div className="developer-image">
-      <img src="/public/developerimg.avif" alt="Developer" />
+      <img src={developer} alt="Developer" />
     </div>
 
     {/* RIGHT CARD */}
