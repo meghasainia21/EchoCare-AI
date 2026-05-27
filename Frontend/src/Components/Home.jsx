@@ -12,7 +12,7 @@ const [email, setEmail] = useState("");
 
   try {
 
-    const response = await fetch("http://localhost:4001/api/subscribe", {
+    const response = await fetch("https://echocare-ai.onrender.com/api/subscribe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
