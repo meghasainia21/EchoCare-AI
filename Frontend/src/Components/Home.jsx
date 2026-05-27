@@ -301,9 +301,9 @@ const [email, setEmail] = useState("");
 
             <div className="modal-actions">
               <button onClick={() => navigate("/signin")}>Login</button>
-              <button onClick={() => navigate("/app/dashboard")}>
+             {/* <button onClick={() => navigate("/app/dashboard")}>
                 Continue as Guest
-              </button>
+              </button>*/}
             </div>
 
             <span onClick={() => setShowModal(false)} className="close">
